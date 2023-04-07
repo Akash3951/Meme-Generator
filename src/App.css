@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  background-color: #672280;
   color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 0px 30px;
+}
+.header-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+.title {
+  /* border: 2px solid black; */
+  width: 18.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-section {
+  padding: 20px;
+  /* border: 2px solid black; */
+  box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+}
+.form {
+  /* border: 2px solid black; */
+  display: grid;
+  width: 70%;
+  margin: 30px auto;
+  grid-template-rows: 40px 55px;
+  row-gap: 25px;
+  column-gap: 25px;
+  justify-items: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.form-input {
+  width: 100%;
+  height: 100%;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border-radius: 5px;
+  border: 2px solid #d5d4d8;
+  text-indent: 20px;
+  font-size: 1.3em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-btn {
+  height: 100%;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #672280;
+  color: white;
+  font-size: larger;
+  font-weight: 600;
 }
+
+.meme-container{
+  position:relative;
+  height:370px ;
+  width: 420px;
+  /* border: 2px solid red; */
+  margin: auto;
+}
+
+.meme-img {
+  display: block;
+  /* height: 370px; */
+  height: 100%;
+  width: 100%;
+  /* width: 420px; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* margin: auto; */
+}
+
+.top-text{
+  position:absolute;
+  top: 15%;
+  left: 20%;
+  color: white;
+  font-size:3em;
+  font-weight: 900;
+  text-shadow:
+    -2px -2px 0 #000, /* top-left */
+     2px -2px 0 #000, /* top-right */
+    -2px  2px 0 #000, /* bottom-left */
+     2px  2px 0 #000; /* bottom-right */
+  
+}
+.bottom-text{
+  position:absolute;
+  bottom: 15%;
+  left: 20%;
+  color: white;
+  font-size:3em;
+  font-weight: 900;
+  text-shadow:
+    -2px -2px 0 #000, /* top-left */
+     2px -2px 0 #000, /* top-right */
+    -2px  2px 0 #000, /* bottom-left */
+     2px  2px 0 #000; /* bottom-right */
+}
+
