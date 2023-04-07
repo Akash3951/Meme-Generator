@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import "../App.css";
 
 export default function Meme() {
+  console.log("working nice")
   const [allMemes, setAllMemes] = React.useState([]);
   const [meme, setMeme] = useState({
     topText: "",
